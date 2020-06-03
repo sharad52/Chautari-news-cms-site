@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}
+		
+		{% endblock %}
+	</title>
+</head>
+<body>
+	<!-- top bar -->
+	{% include partials/_topbar.html %}
+	<!-- nav bar -->
+	{% include partials/_navbar.html %}
+
+	<!-- main contents -->
+	{% block content %}
+
+	{% endblock %}
+
+	<!-- footer -->
+	{% include partials/_footer.html %}
+</body>
+</html>
