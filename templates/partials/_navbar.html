@@ -1,0 +1,43 @@
+<div class="wrapper">
+        <!-- Navigation -->
+        <!-- svg navbar -->
+        <span class="svgnav" >
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff"
+                    stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff"
+                    stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li><a href="{% url 'pages:about' %}">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">देश</a></li>
+                <li><a href="#">अर्थ</a></li>
+                <li><a href="#">राजनिति</a></li>
+                <li><a href="#">बिज्ञान</a></li>
+            </ul>
+            
+        </nav>
+        <!-- side-navbar -->
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="{% url 'pages:home' %}">Home</a>
+            <a href="{% url 'pages:about' %}">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contacts</a>
+            <a href="#">देश</a>
+            <a href="#">अर्थ</a>
+            <a href="#">राजनिति</a>
+            <a href="#">बिज्ञान</a>
+
+        </div>
+
+</div>

@@ -1,17 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- font awesome icon -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- style.css for navbar -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	<title>
 		{% block title %}
 		
 		{% endblock %}
 	</title>
 </head>
-<body>
+<body id ="main">
 	<!-- top bar -->
-	{% include partials/_topbar.html %}
+	{% include 'partials/_topbar.html' %}
 	<!-- nav bar -->
-	{% include partials/_navbar.html %}
+	{% include 'partials/_navbar.html' %}
 
 	<!-- main contents -->
 	{% block content %}
@@ -19,6 +26,9 @@
 	{% endblock %}
 
 	<!-- footer -->
-	{% include partials/_footer.html %}
+	{% include 'partials/_footer.html' %}
+
+	<!-- navbar js -->
+	<script type="text/javascript" src="{% static 'js/resnav.js' %}"></script>
 </body>
 </html>
