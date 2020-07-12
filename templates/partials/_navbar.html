@@ -15,14 +15,15 @@
         </span>
         <nav class="main-nav">
             <ul>
-                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li><a href="{% url 'pages:home' %}">गृह पृष्ठ</a></li>
                 <li><a href="{% url 'pages:about' %}">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">देश</a></li>
-                <li><a href="#">अर्थ</a></li>
-                <li><a href="#">राजनिति</a></li>
-                <li><a href="#">बिज्ञान</a></li>
+                <li><a href="{% url 'pages:services' %}">Services</a></li>
+                <li><a href="{% url 'pages:contacts' %}">Contacts</a></li>
+                <li><a href="{% url 'pages:country' %}">देश</a></li>
+                <li><a href="{% url 'pages:economic' %}">अर्थ</a></li>
+                <li><a href="{% url 'pages:politics' %}">राजनिति</a></li>
+                <li><a href="{% url 'pages:science' %}">बिज्ञान</a></li>
+                <li><a href="{% url 'pages:startup' %}">स्टार्टअप</a></li>
             </ul>
             
         </nav>
@@ -37,6 +38,7 @@
             <a href="#">अर्थ</a>
             <a href="#">राजनिति</a>
             <a href="#">बिज्ञान</a>
+            <a href="#">स्टार्टअप</a>
 
         </div>
 
